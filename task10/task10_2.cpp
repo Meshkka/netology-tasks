@@ -1,7 +1,7 @@
-﻿#include <iostream>
+#include <iostream>
 
-int* create_array(int size) {
-    int* arr = new int[size];
+double* create_array(int size) {
+    double* arr = new double[size];
 
     for (int i = 0; i < size; i++) {
         arr[i] = 0;
@@ -18,7 +18,7 @@ int main()
     std::cout << "Введите размер массива: ";
     std::cin >> size;
 
-    int* arr_ptr = create_array(size);
+    double* arr_ptr = create_array(size);
     std::cout << "Массив:";
 
     for (int i = 0; i < size; i++) {
